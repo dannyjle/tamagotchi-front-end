@@ -6,7 +6,7 @@ export function Layout({ children }) {
       <div className="layout">
         <header className="header">
           <div className="container">
-            <h1>
+            <h1 className="title">
               <Link to="/">Digimon</Link>
             </h1>
           </div>
@@ -16,7 +16,7 @@ export function Layout({ children }) {
         </div>
         <footer className="footer">
           <div className="container">
-            <p>Built with &hearts; in St. Petersburg, FL.</p>
+            <p>Champions of the Digital World!</p>
           </div>
         </footer>
       </div>
