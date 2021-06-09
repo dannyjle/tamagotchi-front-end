@@ -1,21 +1,27 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
+import { Gatomon } from './components/gatomon'
+import { Lopmon } from './components/lopmon'
+import { Patamon } from './components/patamon'
 
 export function App() {
   return (
     <>
-      <header>
-        <h1>Welcome to my SPA</h1>
+      <header className="title">
+        <h1>Digimon Daycare</h1>
         <nav>
           <ul>
-            <li>
-              <Link to="/">Go Home</Link>
+            <li className="home">
+              <Link to="/">Home</Link>
             </li>
-            <li>
-              <Link to="/1">Page 1</Link>
+            <li className="digimon">
+              <Link to="/1">Gatomon</Link>
             </li>
-            <li>
-              <Link to="/2">Page 2</Link>
+            <li className="digimon">
+              <Link to="/2">Patamon</Link>
+            </li>
+            <li className="digimon">
+              <Link to="/3">Lopmon</Link>
             </li>
           </ul>
         </nav>
@@ -25,10 +31,16 @@ export function App() {
           Home
         </Route>
         <Route exact path="/1">
-          Page 1
+          Gatomon
+          <Gatomon />
         </Route>
         <Route exact path="/2">
-          Page 2
+          Patamon
+          <Patamon />
+        </Route>
+        <Route exact path="/3">
+          Lopmon
+          <Lopmon />
         </Route>
         <Route path="*">Not Found</Route>
       </Switch>
