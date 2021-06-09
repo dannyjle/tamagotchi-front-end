@@ -1,5 +1,11 @@
 import { Link } from 'react-router-dom'
 
 export function CreatePet() {
-  return <>{/* something here */}</>
+  return (
+    <>
+      <form>
+        <input type="text"></input>
+      </form>
+    </>
+  )
 }

@@ -33,11 +33,25 @@ body {
   padding: 0 1rem;
 }
 
+.layout .header .title a {
+  background: url('./images/logo.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: transparent;
+  padding: 2.5rem;
+}
+
 .header,
 .footer {
   background-color: rgb(247, 149, 35);
   padding: 1rem;
   text-align: center;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.footer {
+  font-size: 9px;
 }
 
 a {
@@ -53,6 +67,14 @@ a {
   grid-template-columns: repeat(3, 1fr);
   border-radius: 1rem;
   padding: 2rem;
+  background-color: rgb(247, 149, 35);
+  margin: 1rem;
+}
+
+.status {
+  background-color: rgb(43, 173, 227);
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 
 // .title h1 {

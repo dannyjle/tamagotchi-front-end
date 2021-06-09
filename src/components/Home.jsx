@@ -6,7 +6,7 @@ export function Home() {
       <div className="pets">
         <h2>Gatomon</h2>
         <p></p>
-        <dl>
+        <dl className="status">
           <dt>Birthday:</dt>
           <dd>DATE HERE</dd>
           <dt>Hunger Level:</dt>
@@ -18,7 +18,7 @@ export function Home() {
       <div className="pets">
         <h2>Patamon</h2>
         <p></p>
-        <dl>
+        <dl className="status">
           <dt>Birthday:</dt>
           <dd>DATE HERE</dd>
           <dt>Hunger Level:</dt>
@@ -30,7 +30,7 @@ export function Home() {
       <div className="pets">
         <h2>Lopmon</h2>
         <p></p>
-        <dl>
+        <dl className="status">
           <dt>Birthday:</dt>
           <dd>DATE HERE</dd>
           <dt>Hunger Level:</dt>
