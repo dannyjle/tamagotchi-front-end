@@ -1,0 +1,6 @@
+export { Home } from './Home'
+export { Feeding } from './Feeding'
+export { Playtime } from './Playtime'
+export { Scolding } from './Scolding'
+export { DeletePet } from './DeletePet'
+export { CreatePet } from './CreatePet'

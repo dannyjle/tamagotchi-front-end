@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export function Playtimes() {
+export function Scolding() {
   return (
     <>
       <h2>Gatomon</h2>

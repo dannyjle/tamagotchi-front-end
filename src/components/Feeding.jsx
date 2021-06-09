@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export function Feedings() {
+export function Feeding() {
   return (
     <>
       <h2>Gatomon</h2>

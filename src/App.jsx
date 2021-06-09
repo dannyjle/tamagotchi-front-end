@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
-import { CreatePet } from './components/create'
-import { DeletePet } from './components/delete'
-import { Feedings } from './components/feedings'
-import { Playtimes } from './components/playtimes'
-import { Scoldings } from './components/scoldings'
+import {
+  Home,
+  Feeding,
+  Playtime,
+  Scolding,
+  CreatePet,
+  DeletePet,
+} from './components'
 
 export function App() {
   return (
@@ -35,64 +38,23 @@ export function App() {
         </nav>
       </header>
 
-      <h2>Gatomon</h2>
-
-      <p></p>
-      <dl>
-        <dt>Birthday:</dt>
-        <dd>DATE HERE</dd>
-        <dt>Hunger Level:</dt>
-        <dd>HUNGER HERE</dd>
-        <dt>Happiness Level:</dt>
-        <dd>HAPPINESS HERE</dd>
-      </dl>
-
-      <h2>Patamon</h2>
-
-      <p></p>
-      <dl>
-        <dt>Birthday:</dt>
-        <dd>DATE HERE</dd>
-        <dt>Hunger Level:</dt>
-        <dd>HUNGER HERE</dd>
-        <dt>Happiness Level:</dt>
-        <dd>HAPPINESS HERE</dd>
-      </dl>
-
-      <h2>Lopmon</h2>
-
-      <p></p>
-      <dl>
-        <dt>Birthday:</dt>
-        <dd>DATE HERE</dd>
-        <dt>Hunger Level:</dt>
-        <dd>HUNGER HERE</dd>
-        <dt>Happiness Level:</dt>
-        <dd>HAPPINESS HERE</dd>
-      </dl>
-
       <Switch>
         <Route exact path="/">
-          Home
+          <Home />
         </Route>
-        <Route exact path="/1">
-          Feed
-          <Feedings />
+        <Route exact path="/feeding/:id">
+          <Feeding />
         </Route>
-        <Route exact path="/2">
-          Play
-          <Playtimes />
+        <Route exact path="/playing/:id">
+          <Playtime />
         </Route>
-        <Route exact path="/3">
-          Scold
-          <Scoldings />
+        <Route exact path="/scolding/:id">
+          <Scolding />
         </Route>
-        <Route exact path="/4">
-          Create
+        <Route exact path="/create/:id">
           <CreatePet />
         </Route>
-        <Route exact path="/5">
-          Delete
+        <Route exact path="/delete/:id">
           <DeletePet />
         </Route>
         <Route path="*">Not Found</Route>
