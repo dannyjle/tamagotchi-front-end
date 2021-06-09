@@ -13,31 +13,29 @@ import {
 export function App() {
   return (
     <>
-      {/* <header className="title">
-        <h1>Digimon</h1>
-        <nav>
-          <ul>
-            <li className="home">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="interaction">
-              <Link to="/1">Feed</Link>
-            </li>
-            <li className="interaction">
-              <Link to="/2">Play</Link>
-            </li>
-            <li className="interaction">
-              <Link to="/3">Scold</Link>
-            </li>
-            <li className="interaction">
-              <Link to="/4">Create</Link>
-            </li>
-            <li className="interaction">
-              <Link to="/5">Delete</Link>
-            </li>
-          </ul>
-        </nav>
-      </header> */}
+      {/* <nav>
+        <ul>
+          <li className="home">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="interaction">
+            <Link to="/1">Feed</Link>
+          </li>
+          <li className="interaction">
+            <Link to="/2">Play</Link>
+          </li>
+          <li className="interaction">
+            <Link to="/3">Scold</Link>
+          </li>
+          <li className="interaction">
+            <Link to="/4">Create</Link>
+          </li>
+          <li className="interaction">
+            <Link to="/5">Delete</Link>
+          </li>
+        </ul>
+      </nav> */}
+
       <Layout>
         <Switch>
           <Route exact path="/">
