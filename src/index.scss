@@ -9,14 +9,26 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: rgb(43, 173, 227);
+  color: white;
 }
 
-.title h1 {
-  text-align: center;
+.container {
+  max-width: 40rem;
+  margin: auto;
+  padding: 0 1rem;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+.header,
+.footer {
+  background-color: rgb(247, 149, 35);
 }
 
+// .title h1 {
+//   text-align: center;
+// }
+
+// ul {
+//   list-style: none;
+//   padding-left: 0;
+// }

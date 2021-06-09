@@ -7,13 +7,14 @@ import {
   Scolding,
   CreatePet,
   DeletePet,
+  Layout,
 } from './components'
 
 export function App() {
   return (
     <>
-      <header className="title">
-        <h1>Digimon Daycare</h1>
+      {/* <header className="title">
+        <h1>Digimon</h1>
         <nav>
           <ul>
             <li className="home">
@@ -36,29 +37,30 @@ export function App() {
             </li>
           </ul>
         </nav>
-      </header>
-
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/feeding/:id">
-          <Feeding />
-        </Route>
-        <Route exact path="/playing/:id">
-          <Playtime />
-        </Route>
-        <Route exact path="/scolding/:id">
-          <Scolding />
-        </Route>
-        <Route exact path="/create/:id">
-          <CreatePet />
-        </Route>
-        <Route exact path="/delete/:id">
-          <DeletePet />
-        </Route>
-        <Route path="*">Not Found</Route>
-      </Switch>
+      </header> */}
+      <Layout>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/feeding/:id">
+            <Feeding />
+          </Route>
+          <Route exact path="/playing/:id">
+            <Playtime />
+          </Route>
+          <Route exact path="/scolding/:id">
+            <Scolding />
+          </Route>
+          <Route exact path="/create/:id">
+            <CreatePet />
+          </Route>
+          <Route exact path="/delete/:id">
+            <DeletePet />
+          </Route>
+          <Route path="*">Not Found</Route>
+        </Switch>
+      </Layout>
     </>
   )
 }
