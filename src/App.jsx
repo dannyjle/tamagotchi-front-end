@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
-import { Gatomon } from './components/gatomon'
-import { Lopmon } from './components/lopmon'
-import { Patamon } from './components/patamon'
+import { CreatePet } from './components/create'
+import { DeletePet } from './components/delete'
+import { Feedings } from './components/feedings'
+import { Playtimes } from './components/playtimes'
+import { Scoldings } from './components/scoldings'
 
 export function App() {
   return (
@@ -14,33 +16,84 @@ export function App() {
             <li className="home">
               <Link to="/">Home</Link>
             </li>
-            <li className="digimon">
-              <Link to="/1">Gatomon</Link>
+            <li className="interaction">
+              <Link to="/1">Feed</Link>
             </li>
-            <li className="digimon">
-              <Link to="/2">Patamon</Link>
+            <li className="interaction">
+              <Link to="/2">Play</Link>
             </li>
-            <li className="digimon">
-              <Link to="/3">Lopmon</Link>
+            <li className="interaction">
+              <Link to="/3">Scold</Link>
+            </li>
+            <li className="interaction">
+              <Link to="/4">Create</Link>
+            </li>
+            <li className="interaction">
+              <Link to="/5">Delete</Link>
             </li>
           </ul>
         </nav>
       </header>
+
+      <h2>Gatomon</h2>
+
+      <p></p>
+      <dl>
+        <dt>Birthday:</dt>
+        <dd>DATE HERE</dd>
+        <dt>Hunger Level:</dt>
+        <dd>HUNGER HERE</dd>
+        <dt>Happiness Level:</dt>
+        <dd>HAPPINESS HERE</dd>
+      </dl>
+
+      <h2>Patamon</h2>
+
+      <p></p>
+      <dl>
+        <dt>Birthday:</dt>
+        <dd>DATE HERE</dd>
+        <dt>Hunger Level:</dt>
+        <dd>HUNGER HERE</dd>
+        <dt>Happiness Level:</dt>
+        <dd>HAPPINESS HERE</dd>
+      </dl>
+
+      <h2>Lopmon</h2>
+
+      <p></p>
+      <dl>
+        <dt>Birthday:</dt>
+        <dd>DATE HERE</dd>
+        <dt>Hunger Level:</dt>
+        <dd>HUNGER HERE</dd>
+        <dt>Happiness Level:</dt>
+        <dd>HAPPINESS HERE</dd>
+      </dl>
+
       <Switch>
         <Route exact path="/">
           Home
         </Route>
         <Route exact path="/1">
-          Gatomon
-          <Gatomon />
+          Feed
+          <Feedings />
         </Route>
         <Route exact path="/2">
-          Patamon
-          <Patamon />
+          Play
+          <Playtimes />
         </Route>
         <Route exact path="/3">
-          Lopmon
-          <Lopmon />
+          Scold
+          <Scoldings />
+        </Route>
+        <Route exact path="/4">
+          Create
+          <CreatePet />
+        </Route>
+        <Route exact path="/5">
+          Delete
+          <DeletePet />
         </Route>
         <Route path="*">Not Found</Route>
       </Switch>
