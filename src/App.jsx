@@ -1,14 +1,6 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
-import {
-  Home,
-  Feeding,
-  Playtime,
-  Scolding,
-  CreatePet,
-  DeletePet,
-  Layout,
-} from './components'
+import { Home, Interactions, CreateDeletePets, Layout } from './components'
 
 export function App() {
   return (
@@ -41,20 +33,11 @@ export function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/feeding/:id">
-            <Feeding />
+          <Route exact path="/interactions/:id">
+            <Interactions />
           </Route>
-          <Route exact path="/playing/:id">
-            <Playtime />
-          </Route>
-          <Route exact path="/scolding/:id">
-            <Scolding />
-          </Route>
-          <Route exact path="/create/:id">
-            <CreatePet />
-          </Route>
-          <Route exact path="/delete/:id">
-            <DeletePet />
+          <Route exact path="/createordelete/:id">
+            <CreateDeletePets />
           </Route>
           <Route path="*">Not Found</Route>
         </Switch>

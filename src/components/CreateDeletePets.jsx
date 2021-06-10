@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export function CreatePet() {
+export function CreateDeletePets() {
   return (
     <>
       <form>

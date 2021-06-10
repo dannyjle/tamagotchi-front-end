@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export function Playtime() {
+export function Interactions() {
   return (
     <>
       <h2>Gatomon</h2>

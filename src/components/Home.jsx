@@ -4,7 +4,7 @@ export function Home() {
   return (
     <>
       <div className="pets">
-        <h2>Gatomon</h2>
+        <h2 className="petName">Gatomon</h2>
         <p></p>
         <dl className="status">
           <dt>Birthday:</dt>
@@ -16,7 +16,7 @@ export function Home() {
         </dl>
       </div>
       <div className="pets">
-        <h2>Patamon</h2>
+        <h2 className="petName">Patamon</h2>
         <p></p>
         <dl className="status">
           <dt>Birthday:</dt>
@@ -28,7 +28,7 @@ export function Home() {
         </dl>
       </div>
       <div className="pets">
-        <h2>Lopmon</h2>
+        <h2 className="petName">Lopmon</h2>
         <p></p>
         <dl className="status">
           <dt>Birthday:</dt>
