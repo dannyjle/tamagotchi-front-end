@@ -25,6 +25,7 @@ body {
 
   .main {
     flex-grow: 1;
+    display: grid;
   }
 }
 .container {
@@ -57,7 +58,7 @@ body {
 a {
   &:link,
   &:visited {
-    color: rgb(3, 48, 107);
+    color: white;
     text-decoration: none;
   }
 }
@@ -71,7 +72,8 @@ a {
   margin: 1rem;
 }
 
-.petName {
+h2,
+h4 {
   font-family: 'Press Start 2P', cursive;
   font-size: 1rem;
 }
@@ -79,8 +81,6 @@ a {
 .status {
   background-color: rgb(43, 173, 227);
   border-radius: 0.5rem;
-  // padding: 2rem;
-  // margin: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   max-width: 30rem;
@@ -105,6 +105,25 @@ button {
   padding: 1.5rem;
   display: flex;
   flex-direction: row;
+}
+
+.homeButton {
+  padding: 1rem;
+  margin-left: 12rem;
+}
+
+input {
+  border-radius: 0.5rem;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.create,
+.delete {
+  border: white thick;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: rgb(247, 149, 35);
 }
 
 // .title h1 {

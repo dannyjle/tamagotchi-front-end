@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom'
 export function Interactions() {
   return (
     <>
+      <Link to="/">
+        <button className="homeButton">Home</button>
+      </Link>
       <div className="pets">
-        <h2 className="petName">Gatomon</h2>
+        <h2>Gatomon</h2>
         <p></p>
         <dl className="status">
           <dt className="statusTitle">Birthday:</dt>
