@@ -1,21 +1,38 @@
+import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export function Home() {
   const [pets, setPets] = useState([])
+  const [newPet, setNewPet] = useState('')
+
+  async function loadPets() {
+    const response = await fetch('https://digimonapi.herokuapp.com/api/Pets/')
+
+    if (response.status === 200) {
+      const json = await response.json()
+      setPets(json)
+    }
+  }
 
   useEffect(function () {
-    async function loadPets() {
-      const response = await fetch('https://digimonapi.herokuapp.com/api/Pets/')
-
-      if (response.status === 200) {
-        const json = await response.json()
-        setPets(json)
-      }
-    }
-
     loadPets()
   }, [])
+
+  async function addMon(event) {
+    event.preventDefault()
+
+    const response = await axios.post(
+      'https://digimonapi.herokuapp.com/api/Pets/',
+      {
+        name: newPet,
+      }
+    )
+    if (response.status === 201) {
+      loadPets()
+      setNewPet('')
+    }
+  }
 
   return (
     <>
@@ -38,11 +55,17 @@ export function Home() {
       ))}
 
       <div className="create">
-        <h2>Create New Digimon:</h2>
-        <form>
-          <h4>Name:</h4>
-          <input type="text"></input>
-          <button>Create</button>
+        <h2>Create A New Digimon:</h2>
+        <form onSubmit={addMon}>
+          <input
+            type="text"
+            placeholder=" New Digimon's Name"
+            value={newPet}
+            onChange={function resetInput(event) {
+              setNewPet(event.target.value)
+            }}
+          ></input>
+          <input className="submitButton" type="submit" value="Create"></input>
         </form>
       </div>
     </>
