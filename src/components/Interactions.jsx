@@ -44,6 +44,7 @@ export function Interactions() {
       `https://digimonapi.herokuapp.com/api/Pets/${info.id}/Feedings`,
       {}
     )
+
     if (response.status === 200) {
       loadPetInfo()
     }
