@@ -6,7 +6,7 @@ export function Home() {
 
   useEffect(function () {
     async function loadPets() {
-      const response = await fetch('https://digimonapi.herokuapp.com/api/Pets')
+      const response = await fetch('https://digimonapi.herokuapp.com/api/Pets/')
 
       if (response.status === 200) {
         const json = await response.json()
@@ -31,7 +31,7 @@ export function Home() {
             <dt className="statusTitle">Happiness Level:</dt>
             <dd>{pet.happinessLevel}</dd>
           </dl>
-          <Link to="/interactions/">
+          <Link to={`/pets/${pet.id}`}>
             <button>Interact</button>
           </Link>
         </div>
@@ -43,14 +43,6 @@ export function Home() {
           <h4>Name:</h4>
           <input type="text"></input>
           <button>Create</button>
-        </form>
-      </div>
-      <div className="delete">
-        <h2>Delete Old Digimon:</h2>
-        <form>
-          <h4>Name:</h4>
-          <input type="text"></input>
-          <button>Delete</button>
         </form>
       </div>
     </>

@@ -10,7 +10,7 @@ export function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/interactions/">
+          <Route exact path="/pets/:id">
             <Interactions />
           </Route>
           <Route path="*">Not Found</Route>
