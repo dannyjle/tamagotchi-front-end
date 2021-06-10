@@ -17,6 +17,7 @@ export function Layout({ children }) {
         <footer className="footer">
           <div className="container">
             <p>Champions of the Digital World!</p>
+            <p>Created by D.L. in St.Petersburg, FL</p>
           </div>
         </footer>
       </div>

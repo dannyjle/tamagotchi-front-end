@@ -7,13 +7,14 @@ export function Home() {
         <h2 className="petName">Gatomon</h2>
         <p></p>
         <dl className="status">
-          <dt>Birthday:</dt>
-          <dd>DATE HERE</dd>
-          <dt>Hunger Level:</dt>
-          <dd>HUNGER HERE</dd>
-          <dt>Happiness Level:</dt>
-          <dd>HAPPINESS HERE</dd>
+          <dt className="statusTitle">Birthday:</dt>
+          <dd>-</dd>
+          <dt className="statusTitle">Hunger Level:</dt>
+          <dd>-</dd>
+          <dt className="statusTitle">Happiness Level:</dt>
+          <dd>-</dd>
         </dl>
+        <button>Interact</button>
       </div>
       <div className="pets">
         <h2 className="petName">Patamon</h2>

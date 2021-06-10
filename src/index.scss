@@ -28,7 +28,7 @@ body {
   }
 }
 .container {
-  max-width: 40rem;
+  max-width: 30rem;
   margin: auto;
   padding: 0 1rem;
 }
@@ -79,8 +79,32 @@ a {
 .status {
   background-color: rgb(43, 173, 227);
   border-radius: 0.5rem;
-  padding: 1rem;
+  // padding: 2rem;
+  // margin: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  max-width: 30rem;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.statusTitle {
+  font-style: italic;
+  margin: 5px;
+}
+
+button {
+  background-color: rgb(43, 173, 227);
+  border-radius: 0.5rem;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+// button,
+.buttonGroup {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
 }
 
 // .title h1 {

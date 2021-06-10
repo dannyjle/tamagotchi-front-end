@@ -3,41 +3,23 @@ import { Link } from 'react-router-dom'
 export function Interactions() {
   return (
     <>
-      <h2>Gatomon</h2>
-
-      <p></p>
-      <dl>
-        <dt>Birthday:</dt>
-        <dd>DATE HERE</dd>
-        <dt>Hunger Level:</dt>
-        <dd>HUNGER HERE</dd>
-        <dt>Happiness Level:</dt>
-        <dd>HAPPINESS HERE</dd>
-      </dl>
-
-      <h2>Patamon</h2>
-
-      <p></p>
-      <dl>
-        <dt>Birthday:</dt>
-        <dd>DATE HERE</dd>
-        <dt>Hunger Level:</dt>
-        <dd>HUNGER HERE</dd>
-        <dt>Happiness Level:</dt>
-        <dd>HAPPINESS HERE</dd>
-      </dl>
-
-      <h2>Lopmon</h2>
-
-      <p></p>
-      <dl>
-        <dt>Birthday:</dt>
-        <dd>DATE HERE</dd>
-        <dt>Hunger Level:</dt>
-        <dd>HUNGER HERE</dd>
-        <dt>Happiness Level:</dt>
-        <dd>HAPPINESS HERE</dd>
-      </dl>
+      <div className="pets">
+        <h2 className="petName">Gatomon</h2>
+        <p></p>
+        <dl className="status">
+          <dt className="statusTitle">Birthday:</dt>
+          <dd>-</dd>
+          <dt className="statusTitle">Hunger Level:</dt>
+          <dd>-</dd>
+          <dt className="statusTitle">Happiness Level:</dt>
+          <dd>-</dd>
+        </dl>
+        <div className="buttonGroup">
+          <button>♥️ Play</button>
+          <button>🍙 Feed</button>
+          <button>☝🏼 Scold</button>
+        </div>
+      </div>
     </>
   )
 }
