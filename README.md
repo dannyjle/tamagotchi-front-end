@@ -1,3 +1,3 @@
 # Tamagotchi Front End
 
-![SDG](./docs/button.png)
+My take on the classic Tamagotchi toy, but DIGIMON!!!
